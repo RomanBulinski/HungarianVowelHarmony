@@ -5,6 +5,11 @@ public class TastMain {
 
     @Test
     public void exampleTests () {
+
+
+
+    @Test
+    public void exampleTests () {
         assertEquals("ablaknak", Kata.dative("ablak"));
         assertEquals("tükörnek", Kata.dative("tükör"));
         assertEquals("keretnek", Kata.dative("keret"));
