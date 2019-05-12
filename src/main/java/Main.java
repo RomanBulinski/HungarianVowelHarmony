@@ -7,14 +7,18 @@ public class Main {
 
     public static String dative(String word) {
 
-        char[] letters = word.charAt();
+        char[] letters = word.toCharArray();
 
-        if( letters[letters.length-2] == 'a'  ){
+        char let = letters[letters.length-2];
+
+        if(  let == 'a' || let == 'á' || let=='o' || let=='ó'|| let=='u'|| let=='ú' ){
             return word + "nak";
         }
-        if( letters[letters.length-2] == 'é'  ){
+
+        if( let == 'e' || let == 'é' || let == 'i' || let == 'ö' || let == 'ő' || let == 'ü'  || let == 'ű'  ){
             return word + "nek";
         }
+        return word;
 
     }
 }
