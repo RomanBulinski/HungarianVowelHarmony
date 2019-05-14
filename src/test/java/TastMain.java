@@ -14,6 +14,12 @@ public class TastMain {
         assertEquals("tükörnek", Main.dative("tükör"));
     }
 
+    @Test
+    public void exampleTests3 () {
+        assertEquals("tettnek", Main.dative("tett"));
+    }
+
+    
 
 
 //    @Test
@@ -22,7 +28,6 @@ public class TastMain {
 //        assertEquals("keretnek", Kata.dative("keret"));
 //        assertEquals("otthonnak", Kata.dative("otthon"));
 //        assertEquals("virágnak", Kata.dative("virág"));
-//        assertEquals("tettnek", Kata.dative("tett"));
 //        assertEquals("rokkantnak", Kata.dative("rokkant"));
 //        assertEquals("rossznak", Kata.dative("rossz"));
 //        assertEquals("gonosznak", Kata.dative("gonosz"));
