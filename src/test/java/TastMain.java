@@ -34,10 +34,22 @@ public class TastMain {
         assertEquals("virágnak", Main.dative("virág"));
     }
 
+    @Test
+    public void exampleTests7 () {
+        assertEquals("rokkantnak", Main.dative("rokkant"));
+    }
+
+    @Test
+    public void exampleTests8 () {
+        assertEquals("rossznak", Main.dative("rossz"));
+    }
+
+    @Test
+    public void exampleTests9 () {
+        assertEquals("gonosznak", Main.dative("gonosz"));
+    }
 
 
-//        assertEquals("rokkantnak", Kata.dative("rokkant"));
-//        assertEquals("rossznak", Kata.dative("rossz"));
 //        assertEquals("gonosznak", Kata.dative("gonosz"));
 //    }
 
