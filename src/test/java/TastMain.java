@@ -49,9 +49,23 @@ public class TastMain {
         assertEquals("gonosznak", Main.dative("gonosz"));
     }
 
+    @Test
+    public void exampleTests10 () {
+        assertEquals("királynak", Main.dative("király"));
+    }
 
-//        assertEquals("gonosznak", Kata.dative("gonosz"));
-//    }
+    @Test
+    public void exampleTests11 () {
+        assertEquals("xaxnak", Main.dative("xax"));
+    }
+
+//    randomTests
+//    Index -1 out of bounds for length 3
+//    Stack Trace
+//    Completed in 31ms
+//            fixedTests
+//    expected:<király[nak]> but was:<király[]>
+//    Stack Trace
 
 
 }
