@@ -25,6 +25,8 @@ public class Main {
         return word;
     }
 
+//    expected:<kérvény[nek]> but was:<kérvény[]>
+
 
     private static String getNewWord(char let2, char let3, String word) {
         if (let2 == 'a' || let2 == 'á' || let2 == 'o' || let2 == 'ó' || let2 == 'u' || let2 == 'ú') {
@@ -33,10 +35,10 @@ public class Main {
         if (let2 == 'e' || let2 == 'é' || let2 == 'i' || let2 == 'ö' || let2 == 'ő' || let2 == 'ü' || let2 == 'ű') {
             return word + "nek";
         }
-        if (let2 == 't' && let3 == 'e') {
+        if ( let3 == 'e' || let3 == 'é' ) {
             return word + "nek";
         }
-        if (let2 == 'n' && let3 == 'a') {
+        if ( let3 == 'a') {
             return word + "nak";
         }
 
@@ -46,6 +48,7 @@ public class Main {
         if (let3 == 'á' && let2 == 'l') {
             return word + "nak";
         }
+
         return null;
     }
 

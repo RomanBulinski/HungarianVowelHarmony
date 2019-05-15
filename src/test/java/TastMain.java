@@ -59,6 +59,13 @@ public class TastMain {
         assertEquals("xaxnak", Main.dative("xax"));
     }
 
+    @Test
+    public void exampleTests12 () {
+        assertEquals("kérvénynek", Main.dative("kérvény"));
+    }
+
+    //    expected:<kérvény[nek]> but was:<kérvény[]>
+
 //    randomTests
 //    Index -1 out of bounds for length 3
 //    Stack Trace
