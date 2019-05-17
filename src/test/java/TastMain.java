@@ -74,6 +74,13 @@ public class TastMain {
         assertEquals("füstnek", Main.dative("füst"));
     }
 
+    @Test
+    public void exampleTests15 () {
+        assertEquals("őrnek", Main.dative("őr"));
+    }
+
+
+
 
 
 
