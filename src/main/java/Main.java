@@ -47,6 +47,19 @@ public class Main {
     }
 
 
+    // solution from codewars !!!
+//    static final String w1 = "eéiíöőüű";
+//    static final String w2 = "aáoóuú";
+//
+//    public static String dative(String word) {
+//        for (int i = word.length() - 1; i >= 0; i--)
+//        {
+//            if (w1.indexOf(word.charAt(i)) >= 0) return word + "nek";
+//            if (w2.indexOf(word.charAt(i)) >= 0) return word + "nak";
+//        }
+//        return word;
+//    }
+
 
 
 }
