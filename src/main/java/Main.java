@@ -31,14 +31,16 @@ public class Main {
         if ( "eéiöőüűí".contains( String.valueOf(let2)) ) {
             return word + "nek";
         }
-        if ( let3 == 'e' || let3 == 'é' ) {
+        if ( "eéiöőüűí".contains( String.valueOf(let3)) ) {
             return word + "nek";
         }
-        if ( let3 == 'a' || let3 == 'o' || let3 == 'á' ) {
+        if ( "aáoóuú".contains( String.valueOf(let3)) ) {
             return word + "nak";
         }
         return null;
     }
+
+
 
 
 }
