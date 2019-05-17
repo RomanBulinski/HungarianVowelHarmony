@@ -2,6 +2,7 @@ public class Main {
 
     public static String dative(String word) {
 
+        String newWord;
         int len = word.length();
         char[] letters = word.toCharArray();
         char let2 = letters[letters.length - 2];
@@ -9,16 +10,16 @@ public class Main {
 
         if( len > 3 ){
             char let4 = letters[letters.length - 4];
-            String x = getNewWord(let2, let3, word);
-            if (x != null) return x;
+            newWord = getNewWord(let2, let3, word);
+            if (newWord != null) return newWord;
             if ( let4 == 'o') {
                 return word + "nak";
             }
         }else if ( len <= 3 ){
-            String x = getNewWord(let2, let3,word );
-            if (x != null) return x;
+            newWord = getNewWord(let2, let3,word );
+            if (newWord != null) return newWord;
         }
-        return word;
+        return null;
     }
 
 
@@ -27,7 +28,7 @@ public class Main {
         if ( "aáoóuú".contains( String.valueOf(let2) ) ){
             return word + "nak";
         }
-        if ( "eéiöőüű".contains( String.valueOf(let2)) ) {
+        if ( "eéiöőüűí".contains( String.valueOf(let2)) ) {
             return word + "nek";
         }
         if ( let3 == 'e' || let3 == 'é' ) {
